@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra E-Commerce Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
+    <!-- Add your stylesheets here -->
+</head>
+<body>
+
+    <!-- Advertisement Section -->
+    <section id="advertisement">
+        <p>Sign up and GET 20% OFF for your first order. <a href="#signup">Signup Now</a></p>
+        <img src="./assets/icon/cross.png" alt="cross" id="close-ad">
+    </section>
+
+    <!-- Nav Bar Section -->
+    <nav id="navbar">
+        <h2>N <span>O</span> S T R A</h2>
+        <!-- Logo and Navigation Links -->
+        <div class="navbar-left">
+            
+            <ul>
+                <li>
+                    <a href="#shop">Shop<img src="./assets/icon/down-arrow.png" alt="dropdown"></a></li>
+                <li><a href="#most-wanted">Mostwanted</a></li>
+                <li><a href="#new-arrival">Newarrival</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+        
+        <!-- Search and Cart/ User Icons -->
+        <div class="navbar-right">
+            <div class="search-container">
+                <img src="./assets/icon/search.png" alt="search">
+                <input type="text" placeholder="Search" class="search-box">
+            </div>
+            <div>   
+                <img src="./assets/icon/store.png" alt="cart">
+            <img src="./assets/icon/user.png" alt="user">
+            </div>
+            
+        </div>
+    </nav>
+<!-- Sidebar nav-->
+    <div class="container">
+    
+        <aside class="sidebar">
+            <div class="filter-section">
+                <h3>Occasion</h3>
+                <label><input type="checkbox" name="occasion" class="filter-checkbox" value="Summer"> Summer</label>
+                <label><input type="checkbox" name="occasion" class="filter-checkbox" value="Party"> Party</label>
+                <label><input type="checkbox" name="occasion" class="filter-checkbox" value="Beach"> Beach</label>
+            </div>
+            
+            <div class="filter-section">
+                <h3>Color</h3>
+                <label><input type="checkbox" name="color" class="filter-checkbox" value="Red"> Red</label>
+                <label><input type="checkbox" name="color" class="filter-checkbox" value="Blue" > Blue</label>
+                <label><input type="checkbox" name="color" class="filter-checkbox" value="White" > White</label>
+                <label><input type="checkbox" name="color" class="filter-checkbox" value="Green"> Green</label>
+            </div>
+            
+            <div class="filter-section">
+                <h3>Arrivals</h3>
+                <label><input type="checkbox" name="arrival" class="filter-checkbox" value="New"> New</label>
+                <label><input type="checkbox" name="arrival" class="filter-checkbox" value="Old"> Old</label>
+            </div>
+            <!-- Additional Categories -->
+            <div class="filter-category">
+                <h3>Brands <img src="./assets/icon/next.png" alt="next"></h3>
+                <h3>Price <img src="./assets/icon/next.png" alt="next"></h3>
+                <h3>Size <img src="./assets/icon/next.png" alt="next"></h3>
+                <h3>Men <img src="./assets/icon/next.png" alt="next"></h3>
+                <h3>Kids <img src="./assets/icon/next.png" alt="next"></h3>
+                <h3>Sporty <img src="./assets/icon/next.png" alt="next"></h3>
+                <h3>Casual <img src="./assets/icon/next.png" alt="next"></h3>
+            </div>
+        </aside>
+        <!-- Vertical Line -->
+    <div class="vertical-line"></div>
+    
+    <!-- Main Content -->
+        <main class="main-content">
+            <div class="search-box-N">
+                <input type="text" placeholder="Search...">
+            </div>
+            
+            <div class="image-grid">
+                <div class="image-item" data-category="Summer" data-color="Red" data-arrival="New">
+                    <img src="./assets/images/dress/f1.jpg" alt="Product 1">
+                    <h4>Floral Summer Dress</h4>
+                    <p>$29.99</p>
+                </div>
+                <div class="image-item" data-category="Party" data-color="Blue" data-arrival="Old">
+                    <img src="./assets/images/dress/f2.jpg" alt="Product 2">
+                    <h4>Elegant Evening Gown</h4>
+                    <p>$59.99</p>
+                </div>
+                <div class="image-item" data-category="Beach" data-color="White" data-arrival="New">
+                    <img src="./assets/images/dress/f3.jpg" alt="Product 3">
+                    <h4>Casual Denim Dress</h4>
+                    <p>$34.99</p>
+                </div>
+                
+                <div class="image-item" data-category="Summer Beach" data-color="Green" data-arrival="New">
+                    <img src="./assets/images/dress/f5.jpg" alt="Product 4">
+                    <h4>Bohemian Maxi Dress</h4>
+                    <p>$39.99</p>
+                </div>
+                <div class="image-item" data-category="Party" data-color="Red" data-arrival="Old">
+                    <img src="./assets/images/dress/f8.jpg" alt="Product 5">
+                    <h4>Chic Office Dress</h4>
+                    <p>$44.99</p>
+                </div>
+                <div class="image-item" data-category="Summer" data-color="Green" data-arrival="New">
+                    <img src="./assets/images/dress/f6.jpg" alt="Product 6">
+                    <h4>Vintage Polka Dot Dress</h4>
+                    <p>$32.99</p>
+                </div>
+                
+                <div class="image-item" data-category="Beach" data-color="Red" data-arrival="Old">
+                    <img src="./assets/images/dress/n4.jpg" alt="Product 7">
+                    <h4>Classic Black Dress</h4>
+                    <p>$49.99</p>
+                </div>
+                <div class="image-item" data-category="Party" data-color="Green" data-arrival="New">
+                    <img src="./assets/images/dress/n5.jpg" alt="Product 8">
+                    <h4>Trendy Wrap Dress</h4>
+                    <p>$37.99</p>
+                </div>
+                <div class="image-item" data-category="Summer Beach" data-color="Blue" data-arrival="Old">
+                    <img src="./assets/images/dress/n6.jpg" alt="Product 9">
+                    <h4>Lace Cocktail Dress</h4>
+                    <p>$54.99</p>
+                </div>
+            </div>
+        </main>
+    </div>
+<!-- Offer Banner Section -->
+<section id="offer-banner">
+    <div class="offer-banner-content">
+        <img src="./assets/images/offer 1.jpg" alt="offer" id="offer1">
+        <div class="offer-text">
+            <p>LIMITED OFFER</p>
+            <div>
+                <h2>35% Off only this friday and get special gift</h2>
+                <button class="offer-btn">Grab it now <img src="./assets/icon/right-arrow.png" alt="arrow" class="arrow"></button>
+            </div>
+       </div>
+    </div>
+</section>
+<!-- Subscribe Section -->
+<section id="subscribe">
+    <h2>Subscribe to our newsletter to get updates to our latest collections</h2>
+    <p>Get 20% off on your first order just by subscribing to our newsletter</p>
+    <div class="subscribe__input">
+        <input type="email" placeholder="Enter your email">
+        <button class="subscribe__btn">Subscribe</button>
+    </div>
+    <p>you will be able to unsubscribe at any time Read our Privacy policy <a href="#">here</a></p>
+</section>
+<!-- Footer Section -->
+<footer id="footer">
+    <div class="footer__container">
+        <div class="footer-section">
+            <h3>Nostra</h3>
+            <p>Specializes in providing high-quality,<br>stylish products for your wardrobe</p>
+        </div>
+        <div class="footer-section">
+            <h4>Shop</h4>
+            <ul>
+                <li><a href="#allcollection">All Collection</a></li>
+                <li><a href="#winteredition">Winter Edition</a></li>
+                <li><a href="#discount">Discount</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#affiliates">Affiliates</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#cookiepolicy">Cookie Policy</a></li>
+                <li><a href="#terms">Terms of Use</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Payment Methods</h4>
+            <img src="./assets/icon/money.png" alt="Credit Card">
+            <img src="./assets/icon/visa.png" alt="Visa">
+            <img src="./assets/icon/paypal.png" alt="PayPal">
+        </div>
+        
+    </div>
+    <div class="footer-section-1">
+        <hr>
+        <p>&#9400; 2022 Nostra. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+<script src="./filter.js"></script>
+</html>

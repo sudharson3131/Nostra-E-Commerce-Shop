@@ -1,0 +1,153 @@
+<div class="container">
+    
+    <aside class="sidebar">
+        <div class="filter-section">
+            <h3>Occasion</h3>
+            <label><input type="checkbox" name="occasion" class="filter-checkbox" value="Summer"> Summer</label>
+            <label><input type="checkbox" name="occasion" class="filter-checkbox" value="Party"> Party</label>
+            <label><input type="checkbox" name="occasion" class="filter-checkbox" value="Beach"> Beach</label>
+        </div>
+        
+        <div class="filter-section">
+            <h3>Color</h3>
+            <label><input type="checkbox" name="color" class="filter-checkbox" value="Red"> Red</label>
+            <label><input type="checkbox" name="color" class="filter-checkbox" value="Blue"> Blue</label>
+            <label><input type="checkbox" name="color" class="filter-checkbox" value="White"> White</label>
+            <label><input type="checkbox" name="color" class="filter-checkbox" value="Green"> Green</label>
+        </div>
+        
+        <div class="filter-section">
+            <h3>Arrivals</h3>
+            <label><input type="checkbox" name="arrival" class="filter-checkbox" value="New"> New</label>
+            <label><input type="checkbox" name="arrival" class="filter-checkbox" value="Old"> Old</label>
+        </div>
+
+        <!-- Additional Categories -->
+        <div class="filter-category">
+            <h3>Brands <img src="./assets/icon/next.png" alt="next"></h3>
+            <h3>Price <img src="./assets/icon/next.png" alt="next"></h3>
+            <h3>Size <img src="./assets/icon/next.png" alt="next"></h3>
+            <h3>Men <img src="./assets/icon/next.png" alt="next"></h3>
+            <h3>Kids <img src="./assets/icon/next.png" alt="next"></h3>
+            <h3>Sporty <img src="./assets/icon/next.png" alt="next"></h3>
+            <h3>Casual <img src="./assets/icon/next.png" alt="next"></h3>
+        </div>
+    </aside>
+
+    <!-- Vertical Line -->
+    <div class="vertical-line"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="search-box-N">
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <div class="image-grid">
+            <div class="image-item" data-category="Summer">
+                <img src="./assets/images/dress/f1.jpg" alt="Product 1">
+                <h4>Floral Summer Dress</h4>
+                <p>$29.99</p>
+            </div>
+            <div class="image-item" data-category="Party">
+                <img src="./assets/images/dress/f2.jpg" alt="Product 2">
+                <h4>Elegant Evening Gown</h4>
+                <p>$59.99</p>
+            </div>
+            <div class="image-item" data-category="Beach">
+                <img src="./assets/images/dress/f3.jpg" alt="Product 3">
+                <h4>Casual Denim Dress</h4>
+                <p>$34.99</p>
+            </div>
+            
+            <div class="image-item" data-category="Summer Beach">
+                <img src="./assets/images/dress/f5.jpg" alt="Product 4">
+                <h4>Bohemian Maxi Dress</h4>
+                <p>$39.99</p>
+            </div>
+            <div class="image-item" data-category="Party">
+                <img src="./assets/images/dress/f8.jpg" alt="Product 5">
+                <h4>Chic Office Dress</h4>
+                <p>$44.99</p>
+            </div>
+            <div class="image-item" data-category="Summer">
+                <img src="./assets/images/dress/f6.jpg" alt="Product 6">
+                <h4>Vintage Polka Dot Dress</h4>
+                <p>$32.99</p>
+            </div>
+            
+            <div class="image-item" data-category="Beach">
+                <img src="./assets/images/dress/n4.jpg" alt="Product 7">
+                <h4>Classic Black Dress</h4>
+                <p>$49.99</p>
+            </div>
+            <div class="image-item" data-category="Party">
+                <img src="./assets/images/dress/n5.jpg" alt="Product 8">
+                <h4>Trendy Wrap Dress</h4>
+                <p>$37.99</p>
+            </div>
+            <div class="image-item" data-category="Summer Beach">
+                <img src="./assets/images/dress/n6.jpg" alt="Product 9">
+                <h4>Lace Cocktail Dress</h4>
+                <p>$54.99</p>
+            </div>
+        </div>
+    </main>
+</div>
+
+<!-- Offer Banner Section -->
+<section id="offer-banner">
+    <div class="offer-banner-content">
+        <img src="./assets/images/offer1.jpg" alt="offer" id="offer1">
+        <div class="offer-text">
+            <p>LIMITED OFFER</p>
+            <div>
+                <h2>35% Off only this Friday and get a special gift</h2>
+                <button class="offer-btn">Grab it now <img src="./assets/icon/right-arrow.png" alt="arrow" class="arrow"></button>
+            </div>
+        </div>
+    </div>
+</section> <!-- Missing closing tag added -->
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const checkboxes = document.querySelectorAll(".filter-checkbox");
+    const dresses = document.querySelectorAll(".image-item");
+
+    checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener("change", filterDresses);
+    });
+
+    function filterDresses() {
+        let selectedFilters = [];
+
+        // Get all selected checkboxes and store their values
+        checkboxes.forEach((checkbox) => {
+            if (checkbox.checked) {
+                selectedFilters.push(checkbox.value);
+            }
+        });
+
+        // Show all dresses if no filters are selected
+        if (selectedFilters.length === 0) {
+            dresses.forEach((dress) => {
+                dress.style.display = "block";
+            });
+            return;
+        }
+
+        // Filter dresses based on selected checkboxes
+        dresses.forEach((dress) => {
+            let category = dress.getAttribute("data-category");
+            
+            // Check if dress category matches any selected filter
+            if (selectedFilters.some(filter => category.includes(filter))) {
+                dress.style.display = "block"; // Show matching dress
+            } else {
+                dress.style.display = "none"; // Hide non-matching dress
+            }
+        });
+    }
+});
+
+</script>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra E-Commerce Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
+
+    <!-- Add your stylesheets here -->
+</head>
+<body>
+
+    <!-- Advertisement Section -->
+    <section id="advertisement">
+        <p>Sign up and GET 20% OFF for your first order. <a href="#signup">Signup Now</a></p>
+        <img src="./assets/icon/cross.png" alt="cross" id="close-ad">
+    </section>
+
+    <!-- Nav Bar Section -->
+    <nav id="navbar">
+        <h2>N <span>O</span> S T R A</h2>
+        <!-- Logo and Navigation Links -->
+        <div class="navbar-left">
+            
+            <ul>
+                <li>
+                    <a href="#shop">Shop<img src="./assets/icon/down-arrow.png" alt="dropdown"></a></li>
+                <li><a href="#most-wanted">Mostwanted</a></li>
+                <li><a href="#new-arrival">Newarrival</a></li>
+                <li><a href="#Brands">Brands</a></li>
+            </ul>
+        </div>
+        
+        <!-- Search and Cart/ User Icons -->
+        <div class="navbar-right">
+            <div class="search-container">
+                <img src="./assets/icon/search.png" alt="search">
+                <input type="text" placeholder="Search" class="search-box">
+            </div>
+            <div>   
+                <img src="./assets/icon/store.png" alt="cart">
+            <img src="./assets/icon/user.png" alt="user">
+            </div>
+            
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <section id="banner">
+        <div class="slider-container">
+            <div class="slider">
+                <img src="./assets/images/slider-one.jpg" class="slide">
+                <img src="./assets/images/slider-two.jpg" class="slide">
+                <img src="./assets/images/slider-three.jpg" class="slide">
+            </div>
+        </div>
+        <div class="banner-content">
+            <h1>
+                Level up your style with your summer collection
+            </h1>
+            <button class="shop-now-btn" id="navigateButton">Shop now <img src="./assets/icon/right-arrow.png" alt="Right Arrow"></button>
+        </div>
+        <div class="banner-content__button">
+            <img src="./assets/icon/back.png" alt="back" class="back" id="prevBtn">
+            <div class="line"></div>
+            <img src="./assets/icon/next1.png" alt="next" class="next" id="nextBtn">
+        </div>
+    </section>
+    <!-- Brand Icons Section -->
+<section id="brands">
+    <h2>Brands</h2>
+    <div class="brand-icons">
+        <img src="./assets/icon/Brand/adidas.png" alt="adidas">
+        <img src="./assets/icon/Brand/behance.png" alt="behance">
+        <img src="./assets/icon/Brand/blackheart.png" alt="blackheart">
+        <img src="./assets/icon/Brand/leaves.png" alt="leaves">
+        <img src="./assets/icon/Brand/nike.png" alt="nike">
+        <img src="./assets/icon/Brand/puma.png" alt="puma">
+        <img src="./assets/icon/Brand/simple.png" alt="simple">
+        <img src="./assets/icon/Brand/twitch.png" alt="twitch">
+    </div>
+</section>
+<!-- Experience Section -->
+<section id="experience">
+    <h2>We Provide Best Constomer Experiences</h2>
+    <div class="experience-content">
+        <div class="experience-item">
+            <img src="./assets/icon/send-money.png" alt="money">
+            <h3>Original Products</h3>
+            <p>We provide money back guarantee if the product are not original</p>
+        </div>
+        <div class="experience-item">
+            <img src="./assets/icon/happy-mask.png" alt="happy-mask">
+            <h3>Satisfaction Guarantee</h3>
+            <p>Exchange the product you've purchased if it doesn't fit on you.</p>
+        </div>
+        <div class="experience-item">
+            <img src="./assets/icon/shopping-cart.png" alt="shopping-cart">
+            <h3>New Arrival Everyday</h3>
+            <p>Check out our latest collection and be the first to wear it!</p>
+        </div>
+        <div class="experience-item">
+            <img src="./assets/icon/fast-delivery.png" alt="fast-delivery">
+            <h3>Fast & Free Shipping</h3>
+            <p>Get your products delivered quickly and for free!</p>
+        </div>
+    </div>
+</section>
+<!-- Curated Pics Section -->
+<section id="curated-pics">
+    <h2>Curated picks</h2>
+    <div class="curated-pics-content">
+        <div class="pic-item">
+            <img src="./assets/images/model/men-1.jpg" alt="Curated Pic 1">
+            <button class="pic-btn">Shop now <img src="./assets/icon/right-arrow.png" alt="Right Arrow" class="pic-arrow"> </button>
+        </div>
+        <div class="pic-item">
+            <img src="./assets/images/model/men-5.png" alt="Curated Pic 2">
+            <button class="pic-btn">Shop now <img src="./assets/icon/right-arrow.png" alt="Right Arrow" class="pic-arrow"> </button>
+        </div>
+        <div class="pic-item">
+            <img src="./assets/images/model/men-3.jpg" alt="Curated Pic 3">
+            <button class="pic-btn">Shop now <img src="./assets/icon/right-arrow.png" alt="Right Arrow" class="pic-arrow"> </button>
+        </div>
+        <div class="pic-item">
+            <img src="./assets/images/model/men-4.jpg" alt="Curated Pic 4">
+            <button class="pic-btn">Shop now <img src="./assets/icon/right-arrow.png" alt="Right Arrow" class="pic-arrow"> </button>
+        </div>
+    </div>
+</section>
+<!-- Featured Product Section -->
+<section id="featured-products">
+    <h2>Featured Products</h2>
+    <div class="featured-products-content">
+        <div class="product-item">
+            <img src="./assets/images/model/dress 1.jpg" alt="Dress 1" class="Dress">
+            <h3>Gray Shirt</h3>
+            <div class="price-cart">
+                <p class="price">$50.00 <del>$85</del></p>
+                <img src="./assets/icon/store1.png" alt="Cart" class="cart">
+            </div>
+            
+            
+        </div>
+        <div class="product-item">
+            <img src="./assets/images/model/dress 2.jpg" alt="Dress 2" class="Dress">
+            <h3>leather Coat</h3>
+            <div class="price-cart">
+                <p>$60.00 </p>
+                <img src="./assets/icon/store1.png" alt="cart" class="cart">
+            </div>
+            
+        </div>
+        <div class="product-item">
+            <img src="./assets/images/model/dress 3.jpg" alt="Dress 3" class="Dress">
+            <h3>Autumn Dress</h3>
+            <div class="price-cart">
+                <p>$70.00 <del>$40</del></p>
+                <img src="./assets/icon/store1.png" alt="cart" class="cart">
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="./assets/images/model/dress 4.jpg" alt="Dress 3" class="Dress">
+            <h3>Casual Dress</h3>
+            <div class="price-cart">
+                <p>$60.00 <del>$40</del> </p>
+                <img src="./assets/icon/store1.png" alt="cart" class="cart">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Offer Banner Section -->
+<section id="offer-banner">
+    <div class="offer-banner-content">
+        <img src="./assets/images/offer 1.jpg" alt="offer" id="offer1">
+        <div class="offer-text">
+            <p>LIMITED OFFER</p>
+            <div>
+                <h2>35% Off only this friday and get special gift</h2>
+                <button class="offer-btn">Grab it now <img src="./assets/icon/right-arrow.png" alt="arrow" class="arrow"></button>
+            </div>
+       </div>
+    </div>
+</section>
+<!-- Subscribe Section -->
+<section id="subscribe">
+    <h2>Subscribe to our newsletter to get updates to our latest collections</h2>
+    <p>Get 20% off on your first order just by subscribing to our newsletter</p>
+    <div class="subscribe__input">
+        <input type="email" placeholder="Enter your email">
+        <button class="subscribe__btn">Subscribe</button>
+    </div>
+    <p>you will be able to unsubscribe at any time Read our Privacy policy <a href="#">here</a></p>
+</section>
+<!-- Footer Section -->
+<footer id="footer">
+    <div class="footer__container">
+        <div class="footer-section">
+            <h3>Nostra</h3>
+            <p>Specializes in providing high-quality,<br>stylish products for your wardrobe</p>
+        </div>
+        <div class="footer-section">
+            <h4>Shop</h4>
+            <ul>
+                <li><a href="#allcollection">All Collection</a></li>
+                <li><a href="#winteredition">Winter Edition</a></li>
+                <li><a href="#discount">Discount</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#affiliates">Affiliates</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#cookiepolicy">Cookie Policy</a></li>
+                <li><a href="#terms">Terms of Use</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Payment Methods</h4>
+            <img src="./assets/icon/money.png" alt="Credit Card">
+            <img src="./assets/icon/visa.png" alt="Visa">
+            <img src="./assets/icon/paypal.png" alt="PayPal">
+        </div>
+        
+    </div>
+    <div class="footer-section-1">
+        <hr>
+        <p>&#9400; 2022 Nostra. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+<script src="./script.js"></script>
+</html>
